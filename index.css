@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Digital';
+    src: url(Fonts/calcu.ttf) format('truetype');
+}
+
+*{
+    margin: auto;
+}
+.container {
+    width: 597px;
+    height: 490px;
+    margin-top: 30px;
+}
+.expression {
+    background-color: #D7EAF7;
+    height: 50px;
+    font-family: 'Digital', serif;
+    font-size: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.5px solid #CDCDCD;
+    border-radius: 8px 8px 0px 0px;
+}
+.result {
+    background-color: #252525;
+    height: 80px;
+    font-family: 'Digital', serif;
+    color:beige;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 28px ;
+}
+.btn-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+#zero {
+     grid-area: 4 / 1 / 5 / 3;
+     border-bottom-left-radius: 8px;
+}
+#equal {
+    grid-area: 3 / 5 / 5 / 6;
+    height: 100%;
+    border-bottom-right-radius: 8px;
+}
+.btn-main {
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    font-size: 43px;
+    font-family: 'Digital', serif;
+    border: 1px solid #CDCDCD;
+}
+.btn-main:hover {
+    cursor: pointer;
+}
+.btn-main:active {
+    transform: translateY(4px);
+}
+#minus,#plus,#times,#divide{
+    color: #337CAC;
+    font-weight: bold;
+}
+#clear,#CE {
+    background-color: #F0595F;
+    color: white;
+}
+#equal {
+    background-color: #2E86C0;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-family: "Poppins";
+}
